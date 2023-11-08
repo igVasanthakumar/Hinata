@@ -6,7 +6,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bhragavsellam/Terraform.git']])
+                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/igVasanthakumar/Hinata.git']])
                         }
                     }
                 }
