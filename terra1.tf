@@ -4,7 +4,7 @@ provider "aws" {
   secret_key = "O7070wpX+8b4F7Y0zfc7wAD0umWpf+LwxRLLW3hu"
 }
 
-#security group.
+#security group
 resource "aws_security_group" "web_access11" {
         name = "web_access11"
         description = "allow ssh and http"
