@@ -1,5 +1,4 @@
 provider "aws" {
-
 }
 
 #security group
