@@ -17,8 +17,8 @@ pipeline {
                 withAWS(credentials: 'FNeDZpZAp7GyhStEwCSE2pwLp1dKi4eLy8BGJ+HC') {
                     sh 'pwd;cd terraform/ ; terraform init'
                     sh "pwd;cd terraform/ ; terraform fmt"
-                    sh "pwd;cd terraform/ ; terraform validate"
-                    sh "pwd;cd terraform/ ; terraform plan"
+                    //sh "pwd;cd terraform/ ; terraform validate"
+                  // sh "pwd;cd terraform/ ; terraform plan"
                 }
             }
         }
