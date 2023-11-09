@@ -12,7 +12,7 @@ pipeline {
                 }
             }
  
-        stage('Plan') {
+        stage('Init') {
             steps {
                 withAWS(credentials: 'FNeDZpZAp7GyhStEwCSE2pwLp1dKi4eLy8BGJ+HC') {
                     sh "pwd;cd terraform/ ; terraform init"
