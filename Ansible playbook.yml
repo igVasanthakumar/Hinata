@@ -17,5 +17,5 @@
 
     - name: Copy fstab file to /tmp
       copy:
-        src: /path/to/local/fstab/file
-        dest: /tmp/fstab
+        src: /path/to/local/fstab/file         -----/etc/fstab/
+        dest: /tmp/fstab                       ----/tmp/
