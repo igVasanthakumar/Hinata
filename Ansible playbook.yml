@@ -1,0 +1,21 @@
+---
+- name: Configure Web Server
+  hosts: your_target_servers
+  become: true  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Install httpd package
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start and enable httpd service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Copy fstab file to /tmp
+      copy:
+        src: /path/to/local/fstab/file
+        dest: /tmp/fstab
